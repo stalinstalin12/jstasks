@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+.card {
+    margin: auto;
+    background-color: #9ee5e7;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20vw;
+    text-align: center;
+}
+.card button {
+    background-color: rgb(226, 155, 155);
+}
