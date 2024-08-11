@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height convertor</title>
+    <style>
+        .card {
+    margin: auto;
+    background-color:black;
+    color: azure;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.8);
+    width: 40vw;
+    height: 40vh;
+    text-align: center;
+    padding-top: 70px;
+    }
+    .disp2{
+        margin: auto;
+        margin-top: 20px;
+        background-color: rgb(144, 247, 60);
+        box-shadow: 0 2px 4px rgba(255, 250, 250, 0.8);
+        height: 50px;
+        width: 250px;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+        font-size: large;
+        padding-top: 4px;
+    }
+    </style>
+</head>
+<body>
+    <div class="card">
+       <h1> HEIGHT CONVERTOR</h1>
+       <input type="number" placeholder="ENTER LENGTH" id="inp"> 
+       
+       <select name="input_format" id="inp_unit" onchange="convert()">
+        <option value="mi">Miles</option>
+        <option value="cm">Centimetres</option>
+        <option value="m">Metres</option>
+        <option value="km">Kilometres</option>
+        <option value="i">Inches</option>
+       </select>
+       
+       <select name="output_format" id="out_unit" onchange="convert()">
+        <option value="mi">Miles</option>
+        <option value="cm">Centimetres</option>
+        <option value="m">Metres</option>
+        <option value="km">Kilometres</option>
+        <option value="i">Inches</option>
+       </select>
+
+       <!-- <div class="disp1">
+        <p id="disp_ip_unit"></p>
+        <p id="disp_ip_res"></p>
+       </div> -->
+
+       <div class="disp2">
+        <p id="disp_op_res"></p>
+       </div>
+
+
+    </div>
+
+    <script src="height.js"></script>
+</body>
+</html>
